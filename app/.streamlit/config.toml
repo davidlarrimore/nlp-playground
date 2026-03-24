@@ -1,9 +1,9 @@
 [theme]
-# Primary theme colors
-primaryColor = "#667eea"
+# Tailwind CSS-inspired color palette
+primaryColor = "#3b82f6"
 backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#f6f8fb"
-textColor = "#1f2937"
+secondaryBackgroundColor = "#f8fafc"
+textColor = "#0f172a"
 font = "sans serif"
 
 [server]

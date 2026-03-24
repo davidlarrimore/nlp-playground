@@ -1041,7 +1041,7 @@ def sentiment_analysis_page() -> None:
             border-radius: 4px;
         }
         .reviews-container::-webkit-scrollbar-thumb {
-            background: #667eea;
+            background: #3b82f6;
             border-radius: 4px;
         }
         .reviews-container::-webkit-scrollbar-thumb:hover {
@@ -1180,8 +1180,8 @@ def sentiment_analysis_page() -> None:
     st.markdown("# 💭 Sentiment Analysis Lab")
     st.markdown(
         """
-        <div style='background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
-        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #667eea; margin-bottom: 2rem;'>
+        <div style='background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 2rem;'>
             <p style='margin: 0; color: #4b5563; font-size: 1.05rem;'>
                 <strong>What you'll learn:</strong> How traditional NLP models can analyze sentiment and extract topics
                 <em>without expensive LLM API calls</em> - delivering results in <strong>milliseconds instead of seconds</strong>.

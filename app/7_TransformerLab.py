@@ -364,7 +364,7 @@ def transformer_page() -> None:
     # Introduction section
     st.markdown(
         """
-        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);'>
+        <div style='background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2);'>
             <div style='color: white;'>
                 <h3 style='margin-top: 0; color: white;'>🎯 What Is This?</h3>
                 <p style='font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem;'>

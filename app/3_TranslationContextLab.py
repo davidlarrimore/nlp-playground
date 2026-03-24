@@ -105,8 +105,8 @@ def translation_page() -> None:
     st.markdown("# 🌐 Translation Context Lab")
     st.markdown(
         """
-        <div style='background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
-        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #667eea; margin-bottom: 1.5rem;'>
+        <div style='background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 1.5rem;'>
             <p style='margin: 0; color: #4b5563; font-size: 1.05rem;'>
                 Select a language example below to see how context transforms translation quality.
                 The sentence contains context-neutral words like "teammates", "reviewer", "decision", and "approach"
@@ -196,7 +196,7 @@ def translation_page() -> None:
                 st.rerun()
 
             # Display the text sample below the button
-            border_color = "#667eea" if is_selected else "#e5e7eb"
+            border_color = "#3b82f6" if is_selected else "#e5e7eb"
             background = "linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)" if is_selected else "#f9fafb"
 
             st.markdown(
@@ -226,14 +226,14 @@ def translation_page() -> None:
         st.markdown(
             f"""
             <div style='background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
-            padding: 1.5rem; border-radius: 12px; border: 2px solid #667eea; margin-bottom: 1.5rem;'>
-                <div style='font-weight: 600; color: #667eea; margin-bottom: 0.8rem; font-size: 1.1rem;'>
+            padding: 1.5rem; border-radius: 12px; border: 2px solid #3b82f6; margin-bottom: 1.5rem;'>
+                <div style='font-weight: 600; color: #3b82f6; margin-bottom: 0.8rem; font-size: 1.1rem;'>
                     English (Original):
                 </div>
                 <div style='font-size: 1.15rem; color: #1f2937; line-height: 1.6; margin-bottom: 1rem;'>
                     "{selected_lang_data['english_original']}"
                 </div>
-                <div style='font-weight: 600; color: #667eea; margin-bottom: 0.8rem; font-size: 1.1rem;'>
+                <div style='font-weight: 600; color: #3b82f6; margin-bottom: 0.8rem; font-size: 1.1rem;'>
                     {selected_lang_data['emoji']} {selected_lang_data['language']} ({selected_lang_data['script']} Script):
                 </div>
                 <div style='font-size: 1.15rem; color: #1f2937; line-height: 1.6;'>
@@ -339,8 +339,8 @@ def translation_page() -> None:
                 st.markdown(
                     f"""
                     <div style='background: white; padding: 1rem; border-radius: 10px;
-                    border: 2px solid #667eea; text-align: center;'>
-                        <div style='font-weight: 600; color: #667eea; margin-bottom: 0.5rem;'>
+                    border: 2px solid #3b82f6; text-align: center;'>
+                        <div style='font-weight: 600; color: #3b82f6; margin-bottom: 0.5rem;'>
                             Source Text
                         </div>
                         <div style='font-size: 1.1rem; color: #1f2937;'>
@@ -459,7 +459,7 @@ def translation_page() -> None:
             with result_col2:
                 st.markdown(
                     """
-                    <div style='text-align: center; padding: 0.8rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    <div style='text-align: center; padding: 0.8rem; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
                     color: white; border-radius: 10px 10px 0 0; font-weight: 600;'>
                         2️⃣ With Context
                     </div>
@@ -484,7 +484,7 @@ def translation_page() -> None:
                     st.markdown(
                         f"""
                         <div style='background: white; padding: 1.5rem; border-radius: 0 0 10px 10px;
-                        border: 2px solid #667eea; min-height: 150px; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);'>
+                        border: 2px solid #3b82f6; min-height: 150px; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);'>
                             <div style='font-size: 1.2rem; color: #1f2937; line-height: 1.6; font-weight: 500;'>
                                 "{st.session_state["translation_with_context"]}"
                             </div>

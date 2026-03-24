@@ -17,8 +17,8 @@ def tokenization_page() -> None:
     st.markdown("# 🔤 Tokenization Lab")
     st.markdown(
         """
-        <div style='background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
-        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #667eea; margin-bottom: 1.5rem;'>
+        <div style='background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 1.5rem;'>
             <p style='margin: 0; color: #4b5563; font-size: 1.05rem;'>
                 Watch how GPT-style tokenizers break text into byte-pair tokens.
                 Enter any sentence and see both the human-readable token fragments and their numeric IDs.
@@ -55,7 +55,7 @@ def tokenization_page() -> None:
             box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; margin-top: 0.5rem;'>
                 <div style='color: #9ca3af; font-size: 0.85rem; text-transform: uppercase;
                 letter-spacing: 0.5px; margin-bottom: 0.5rem;'>Token Count</div>
-                <div style='color: #667eea; font-size: 2.5rem; font-weight: 700;'>{len(tokens)}</div>
+                <div style='color: #3b82f6; font-size: 2.5rem; font-weight: 700;'>{len(tokens)}</div>
                 <div style='color: #6b7280; font-size: 0.9rem; margin-top: 0.5rem;'>
                     {len(text)} characters
                 </div>
@@ -127,18 +127,18 @@ def tokenization_page() -> None:
     .token-chip {{
         display: inline-flex;
         align-items: center;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
         color: white;
         padding: 0.45rem 0.9rem;
         border-radius: 18px;
         font-family: 'Monaco', 'Courier New', monospace;
         font-size: 0.9rem;
-        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }}
     .token-chip:hover {{
         transform: translateY(-2px);
-        box-shadow: 0 8px 18px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 8px 18px rgba(59, 130, 246, 0.4);
     }}
     .token-number {{
         background: rgba(255, 255, 255, 0.2);

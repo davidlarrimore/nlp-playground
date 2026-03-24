@@ -59,10 +59,10 @@ def apply_custom_css() -> None:
 
         /* Custom card styling */
         .custom-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
             margin-bottom: 1.5rem;
             color: white;
         }
@@ -82,7 +82,7 @@ def apply_custom_css() -> None:
         /* Feature card styling */
         .feature-card {
             background: white;
-            border: 2px solid #f0f2f6;
+            border: 2px solid #e2e8f0;
             padding: 1.5rem;
             border-radius: 12px;
             margin: 0.5rem 0;
@@ -92,8 +92,8 @@ def apply_custom_css() -> None:
 
         .feature-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
-            border-color: #667eea;
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
         }
 
         .feature-icon {
@@ -116,15 +116,15 @@ def apply_custom_css() -> None:
 
         /* Info box styling */
         .info-box {
-            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
             padding: 1.5rem;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #3b82f6;
             margin: 1rem 0;
         }
 
         .info-box h3 {
-            color: #667eea;
+            color: #3b82f6;
             margin-bottom: 0.8rem;
             font-size: 1.3rem;
         }
@@ -148,12 +148,13 @@ def apply_custom_css() -> None:
 
         .stButton>button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
         }
 
-        /* Sidebar styling */
+        /* Sidebar styling — light Tailwind slate */
         [data-testid="stSidebar"] {
-            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            background: #f8fafc;
+            border-right: 1px solid #e2e8f0;
         }
 
         /* Navigation link styling */
@@ -164,22 +165,22 @@ def apply_custom_css() -> None:
         [data-testid="stSidebar"] .stRadio > div {
             display: flex;
             flex-direction: column;
-            gap: 0.35rem;
+            gap: 0.25rem;
         }
 
         [data-testid="stSidebar"] .stRadio label {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 0.75rem 1rem;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            color: white;
+            background: transparent;
+            padding: 0.65rem 0.85rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            color: #334155;
             display: flex;
             align-items: center;
             width: 100%;
             box-sizing: border-box;
             cursor: pointer;
-            font-weight: 600;
-            font-size: 1.05rem;
+            font-weight: 500;
+            font-size: 0.95rem;
             gap: 0.5rem;
         }
 
@@ -199,15 +200,16 @@ def apply_custom_css() -> None:
         }
 
         [data-testid="stSidebar"] .stRadio label[aria-checked="true"] {
-            background: rgba(255, 255, 255, 0.25);
-            color: #ffffff;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            background: #eff6ff;
+            color: #1e40af;
+            font-weight: 600;
+            border: 1px solid #bfdbfe;
         }
 
         [data-testid="stSidebar"] .stRadio label:hover {
-            background: rgba(255, 255, 255, 0.18);
-            color: #ffffff;
-            transform: translateX(4px);
+            background: #f1f5f9;
+            color: #1e293b;
+            transform: translateX(2px);
         }
 
         /* Responsive design */
@@ -405,7 +407,7 @@ def main() -> None:
     st.sidebar.markdown(
         """
         <div style='text-align: center; padding: 1rem 0 0.5rem 0;'>
-            <h2 style='color: white; margin: 0; font-size: 1.5rem;'>🎮 NLP Playground</h2>
+            <h2 style='color: #0f172a; margin: 0; font-size: 1.5rem; font-weight: 700;'>🎮 NLP Playground</h2>
         </div>
         """,
         unsafe_allow_html=True,
@@ -432,8 +434,8 @@ def main() -> None:
     st.sidebar.markdown("---")
     st.sidebar.markdown(
         """
-        <div style='text-align: center; padding: 1rem; color: white;'>
-            <p style='font-size: 0.9rem; opacity: 0.8;'>🤖 Powered by Amivero Labs</p>
+        <div style='text-align: center; padding: 1rem; color: #64748b;'>
+            <p style='font-size: 0.85rem; margin: 0;'>🤖 Powered by Amivero Labs</p>
         </div>
         """,
         unsafe_allow_html=True,

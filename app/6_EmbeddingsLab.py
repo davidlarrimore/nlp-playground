@@ -63,8 +63,8 @@ def embeddings_page() -> None:
     st.markdown("# 🎯 Embeddings Lab")
     st.markdown(
         """
-        <div style='background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
-        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #667eea; margin-bottom: 1.5rem;'>
+        <div style='background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 1.5rem; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 1.5rem;'>
             <p style='margin: 0; color: #4b5563; font-size: 1.05rem;'>
                 <strong>How it works:</strong> Vector embeddings convert text into numerical representations that capture
                 meaning. When you search for a concept, the system finds reports with similar <em>meaning</em>, not just
