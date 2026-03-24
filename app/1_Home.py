@@ -423,7 +423,7 @@ def main() -> None:
         current_index = 0
         st.session_state.page = "🏠 Home"
 
-    selection = st.sidebar.radio("", nav_options, index=current_index, label_visibility="collapsed")
+    selection = st.sidebar.radio("Navigation", nav_options, index=current_index, label_visibility="collapsed")
 
     # Update session state when sidebar is used
     if selection != st.session_state.page:
