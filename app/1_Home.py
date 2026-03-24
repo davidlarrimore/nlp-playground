@@ -433,7 +433,7 @@ def main() -> None:
     st.sidebar.markdown(
         """
         <div style='text-align: center; padding: 1rem; color: white;'>
-            <p style='font-size: 0.9rem; opacity: 0.8;'>🤖 Powered by Aiuto</p>
+            <p style='font-size: 0.9rem; opacity: 0.8;'>🤖 Powered by Amivero Labs</p>
         </div>
         """,
         unsafe_allow_html=True,

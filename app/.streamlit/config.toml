@@ -20,3 +20,4 @@ gatherUsageStats = false
 # Client settings
 showErrorDetails = true
 toolbarMode = "auto"
+showSidebarNavigation = false
